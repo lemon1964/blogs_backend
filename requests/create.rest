@@ -1,0 +1,38 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{ 
+    "title": "Learning JavaScript Design Patterns",
+    "author": "William Oliveira",
+    "url": "https://patterns.addy.ie/",
+    "likes": 9,
+    "userId": "66a3f86eab6038d48a0ee519"
+
+}
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlbW9uIiwiaWQiOiI2NmEzZjhjNmFiNjAzOGQ0OGEwZWU1MWIiLCJpYXQiOjE3MjIxMjA5OTEsImV4cCI6MTcyMjQ4MDk5MX0.jYgCkeIa7l7YY046XoHSAfBim-DXgdS386QCZwCiqcw
+
+{ 
+    "title": "Check for blog deletion",
+    "author": "Delete",
+    "url": "https://www.deletion.com/",
+    "likes": 15
+}
+
+###
+
+PUT http://localhost:3003/api/blogs/66a40ea64cf9579d3ff15541
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlbW9uIiwiaWQiOiI2NmEzZjhjNmFiNjAzOGQ0OGEwZWU1MWIiLCJpYXQiOjE3MjIxMjA5OTEsImV4cCI6MTcyMjQ4MDk5MX0.jYgCkeIa7l7YY046XoHSAfBim-DXgdS386QCZwCiqcw
+
+{ 
+    "title": "Programming JavaScript Applications",
+    "author": "Addy Osmani",
+    "url": "https://www.oreilly.com/",
+    "likes": 17
+}
+
